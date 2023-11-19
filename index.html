@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      body,
+      html {
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+      }
+      a {
+        text-decoration: none;
+        color: #b2b5b7;
+      }
+      a:hover {
+        color: #fff;
+      }
+      .navbar {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #f5f5f5; */
+        padding: 10px 20px;
+      }
+      .logo {
+        font-size: 24px;
+        color: red;
+        font-weight: bold;
+        padding: 10px 0;
+      }
+      .search-container {
+        display: flex;
+        align-items: center;
+        /* flex-grow: 1; */
+        margin: 10px 50px;
+        background-color: #fff;
+      }
+      .search-container button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+        background-color: #f65858;
+      }
+      .first-input {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 250px;
+      }
+      .first-input:hover {
+        border: 1px solid #000;
+      }
+      .second-input {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        /* border-top-left-radius: 5px; */
+        /* border-bottom-left-radius: 5px; */
+        width: 250px;
+      }
+      .second-input:hover {
+        border: 1px solid #000;
+      }
+      .search-container i {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+      .search-container input[type="search"] {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        border: none;
+        /* border-radius: 5px; */
+      }
+      .search-container input:focus {
+        border: none;
+        outline: none;
+      }
+      button {
+        color: #fff;
+        background-color: #008fa3;
+        border-radius: 5px;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px 10px 10px 0;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+      .navbar select {
+        padding: 10px;
+        border: none;
+        margin: 10px 20px 10px 0;
+        border-radius: 5px;
+      }
+      .language {
+        margin-left: auto;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .search-container {
+          order: 3;
+          margin: 10px 0;
+        }
+        .navbar select,
+        .navbar button {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+      /*  */
+      .banner {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        /* padding: 20px; */
+        /* background-color: #f5f5f5; */
+      }
+
+      .content {
+        max-width: 600px;
+      }
+
+      .content h1 {
+        font-size: 24px;
+        color: #333;
+      }
+
+      .content p {
+        color: #666;
+      }
+
+      .button {
+        background-color: #0073e6;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+        display: inline-block;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .banner {
+          flex-direction: column;
+        }
+
+        .content h1 {
+          font-size: 20px;
+        }
+
+        .content p {
+          font-size: 14px;
+        }
+
+        .image {
+          margin-top: 20px;
+          width: 100%;
+          height: auto;
+        }
+      }
+      /* footer */
+      .footer {
+        background-color: #000;
+        color: #fff;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-weight: bold;
+      }
+      .section1-container {
+        display: block;
+      }
+      .section1-content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      .section1-button {
+        color: #fff;
+        background-color: #000;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      .section1-button:hover {
+        color: #000;
+        background-color: #fff;
+      }
+      .section1-line {
+        margin-top: 20px;
+        background-color: #fff; /* This sets the line color to green */
+        width: 100%;
+      }
+      .section2-container {
+        display: flex;
+        gap: 20%;
+      }
+      .section2-column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .section4-container {
+        display: flex;
+        gap: 30px;
+      }
+      /*  */
+      .section3-container {
+        background-color: #000; /* Assuming a black background */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .social-icons {
+        display: flex;
+        gap: 15px;
+      }
+      .social-icons img {
+        height: 24px; /* Adjust as needed */
+        margin-right: 10px; /* Space between icons */
+      }
+
+      .store-badges img {
+        height: 48px; /* Adjust as needed */
+        margin-left: 10px; /* Space between badges */
+      }
+      .icon {
+        color: #fff;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="logo">Meetup</div>
+      <div class="search-container">
+        <div class="first-input">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search events" />
+        </div>
+        <div class="second-input">
+          <input type="search" placeholder="Neighborhood, city or zip" />
+        </div>
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="language">
+        <i class="fa-solid fa-globe"></i>
+        <span id="language">English</span>
+      </div>
+      <button>Log in</button>
+      <button>Sign up</button>
+    </div>
+    <!-- banner -->
+    <div class="banner container">
+      <div class="content">
+        <h1>The people platform—Where interests become friendships</h1>
+        <p>
+          Whatever your interest, from hiking and reading to networking and
+          skill sharing, there are thousands of people who share it on Meetup.
+          Events are happening every day—sign up to join the fun.
+        </p>
+        <button>Join Meetup</button>
+      </div>
+      <div>
+        <!-- The image will be displayed here -->
+        <img src="./assets/images/img1.png" width="400px" />
+      </div>
+    </div>
+    <!-- section A -->
+    <div class="container">
+      <div class="section-title">Events near Cairo, EG</div>
+      <div id="section-a"></div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <!-- section 1 -->
+      <div class="section1-container">
+        <div class="section1-content">
+          <div>Create your own Meetup group.Get Started</div>
+          <button class="section1-button">Get Started</button>
+        </div>
+        <hr class="section1-line" />
+      </div>
+      <div class="section2-container">
+        <div class="section2-column">
+          <div>Your Account</div>
+          <a href="#">Sign up</a>
+          <a href="#">Login</a>
+          <a href="#">Help</a>
+          <a href="#">Become an Affiliate</a>
+        </div>
+        <div class="section2-column">
+          <div>Discover</div>
+          <a href="#">Groups</a>
+          <a href="#">Calendar</a>
+          <a href="#">Topics</a>
+          <a href="#">Cities</a>
+          <a href="#">Online Events</a>
+          <a href="#">Local Guides</a>
+          <a href="#">Make Friends</a>
+        </div>
+        <div class="section2-column">
+          <div>Meetup</div>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Meetup Pro</a>
+          <a href="#">Careers</a>
+          <a href="#">Apps</a>
+          <a href="#">Podcast</a>
+        </div>
+      </div>
+      <div class="section3-container">
+        <div>
+          <div style="padding-bottom: 10px">Follow us</div>
+          <div class="social-icons">
+            <!-- You will replace the "#" with the actual links -->
+            <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube icon"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok icon"></i></a>
+          </div>
+        </div>
+        <div class="store-badges">
+          <!-- You will replace "path-to..." with the actual image source paths -->
+          <a href="#"
+            ><img
+              src="https://secure.meetupstatic.com/next/images/app-download/android/download_en-US.svg?w=256"
+              alt="Get it on Google Play"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://secure.meetupstatic.com/next/images/app-download/ios/download_en-US.svg?w=256"
+              alt="Download on the App Store"
+          /></a>
+        </div>
+      </div>
+      <div class="section4-container">
+        <div>© 2023 Meetup</div>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

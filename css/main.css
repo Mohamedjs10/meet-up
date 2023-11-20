@@ -10,6 +10,7 @@
   text-align: left;
   vertical-align: middle;
   font-size: 15px;
+  /* border: 1px solid #0073e6; */
 }
 
 body {
@@ -69,7 +70,7 @@ a:hover {
   border: 1px solid #ddd;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  width: 250px;
+  max-width: 250px;
 }
 .first-input:hover {
   border: 1px solid #000;
@@ -80,7 +81,7 @@ a:hover {
   border: 1px solid #ddd;
   /* border-top-left-radius: 5px; */
   /* border-bottom-left-radius: 5px; */
-  width: 250px;
+  max-width: 250px;
 }
 .second-input:hover {
   border: 1px solid #000;
@@ -127,7 +128,7 @@ button:hover {
   cursor: pointer;
   margin-right: 10px;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: stretch;
@@ -141,7 +142,7 @@ button:hover {
     width: 100%;
     margin: 5px 0;
   }
-}
+} */
 /*  */
 .banner {
   display: flex;
@@ -150,7 +151,14 @@ button:hover {
   /* padding: 20px; */
   /* background-color: #f5f5f5; */
 }
-
+.banner-image {
+  width: 400px;
+}
+@media (max-width: 768px) {
+  .banner-image {
+    width: 200px;
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
@@ -254,7 +262,7 @@ button:hover {
 
 .section4-container {
   display: flex;
-  gap: 30px;
+  gap: 5%;
 }
 /*  */
 .section3-container {
@@ -287,12 +295,21 @@ button:hover {
   margin-right: 100px;
   margin-left: 100px;
 }
+@media (max-width: 768px) {
+  .container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
 #section-a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px;
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -326,6 +343,7 @@ button:hover {
 }
 .section-title {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
@@ -348,9 +366,11 @@ button:hover {
 }
 #section-b {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 5px;
 }
+
 .category-card {
   background-color: #f2f9f9;
   width: 120px;
@@ -369,4 +389,74 @@ button:hover {
 .category-card:hover {
   cursor: pointer;
   background-color: #e2f7f7;
+}
+/* **** */
+#section-c {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+.friendships-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  transition: box-shadow 0.3s ease;
+}
+.friendships-card:hover {
+  cursor: pointer;
+}
+
+.friendships-card:hover img {
+  opacity: 0.7;
+}
+
+.friendships-card:hover p {
+  text-decoration: underline;
+}
+.friendships-card img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.card-content {
+  /* padding: 15px; */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #008fa3;
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+}
+/* **** */
+@media (max-width: 768px) {
+  #section-a {
+    justify-content: center;
+  }
+  #section-c {
+    justify-content: center;
+  }
+  .store-badges img {
+    width: 100px;
+  }
 }

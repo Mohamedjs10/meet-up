@@ -423,3 +423,53 @@ if (document.getElementById("section-a")) {
     container.appendChild(fruitDiv);
   });
 }
+// ******************************************
+//* Section C
+// ******************************************
+if (document.getElementById("section-a")) {
+  const categories = [
+    {
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/blog/first_article.webp?w=384",
+      title: "How to Turn Casual Connections into Close Friendships",
+      description:
+        "It’s proven that close friendships are harder to make as an adult. But don’t sweat it: here’s what you can do to simplify the process.",
+    },
+    {
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/blog/second_article.webp?w=384",
+      title: "How to Turn Casual Connections into Close Friendships",
+      description:
+        "It’s proven that close friendships are harder to make as an adult. But don’t sweat it: here’s what you can do to simplify the process.",
+    },
+    {
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/blog/third_article.webp?w=384",
+      title: "How to Turn Casual Connections into Close Friendships",
+      description:
+        "It’s proven that close friendships are harder to make as an adult. But don’t sweat it: here’s what you can do to simplify the process.",
+    },
+  ];
+
+  // Function to map over the array and create HTML content
+  const container = document.getElementById("section-c");
+  // container.innerHTML = ""; // Clear existing content
+
+  categories.forEach((item, index) => {
+    const fruitDiv = document.createElement("div");
+    fruitDiv.addEventListener("click", () => {
+      window.location.href = item.detailsUrl;
+    });
+    fruitDiv.classList.add("friendships-card");
+    fruitDiv.innerHTML = `
+    <img src=${item.image}>
+    <div class="card-content">
+        <div class="card-title">${item.title}</div>
+        <div class="card-text">${item.description}</div>
+        <p class="card-link">Read more</p>
+    </div>
+`;
+
+    container.appendChild(fruitDiv);
+  });
+}

@@ -230,7 +230,6 @@ if (document.getElementById("categories-container")) {
 // ******************************************
 // ******************************************
 if (document.getElementById("section-a")) {
-  // Sample array
   const fruits = [
     {
       image:
@@ -339,6 +338,87 @@ if (document.getElementById("section-a")) {
     //         </select>
     //     </td>
     // `;
+
+    container.appendChild(fruitDiv);
+  });
+}
+// ******************************************
+//* Section B
+// ******************************************
+if (document.getElementById("section-a")) {
+  const categories = [
+    {
+      icon: "",
+      title: "Travel and Outdoor",
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/categories/travel_and_outdoor.svg?w=32 1x, https://secure.meetupstatic.com/next/images/indexPage/categories/travel_and_outdoor.svg?w=48",
+      link: "https://www.meetup.com/lp/outdoors-and-travel/",
+    },
+    {
+      icon: "",
+      title: "Social Activities",
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/categories/social_activities.svg?w=32",
+      link: "https://www.meetup.com/lp/friendship-and-socializing/",
+    },
+    {
+      icon: "",
+      title: "Hobbies and PAssions",
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/categories/hobbies_and_passions.svg?w=32",
+      link: "https://www.meetup.com/topics/hobbies-crafts/",
+    },
+    {
+      icon: "",
+      title: "Sports and Fitness",
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/categories/sports_and_fitness.svg?w=32",
+      link: "https://www.meetup.com/topics/sports/",
+    },
+    {
+      icon: "",
+      title: "Health and Wellbeing",
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/categories/health_and_wellness.svg?w=32",
+      link: "https://www.meetup.com/lp/health-and-wellness/",
+    },
+    {
+      icon: "",
+      title: "Technology",
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/categories/technology.svg?w=32",
+      link: "https://www.meetup.com/lp/tech-activities-and-groups/",
+    },
+    {
+      icon: "",
+      title: "Art and Culture",
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/categories/art_and_culture.svg?w=32",
+      link: "https://www.meetup.com/topics/art-and-culture/",
+    },
+    {
+      icon: "",
+      title: "Games",
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/categories/games.svg?w=32",
+      link: "https://www.meetup.com/topics/games/",
+    },
+  ];
+
+  // Function to map over the array and create HTML content
+  const container = document.getElementById("section-b");
+  // container.innerHTML = ""; // Clear existing content
+
+  categories.forEach((item, index) => {
+    const fruitDiv = document.createElement("div");
+    fruitDiv.addEventListener("click", () => {
+      window.location.href = item.detailsUrl;
+    });
+    fruitDiv.classList.add("category-card");
+    fruitDiv.innerHTML = `
+<img src=${item.image} width="20px"/>
+<p>${item.title}</p>
+`;
 
     container.appendChild(fruitDiv);
   });

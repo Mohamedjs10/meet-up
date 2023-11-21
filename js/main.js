@@ -426,7 +426,7 @@ if (document.getElementById("section-a")) {
 // ******************************************
 //* Section C
 // ******************************************
-if (document.getElementById("section-a")) {
+if (document.getElementById("section-c")) {
   const categories = [
     {
       image:
@@ -471,5 +471,51 @@ if (document.getElementById("section-a")) {
 `;
 
     container.appendChild(fruitDiv);
+  });
+}
+// ******************************************
+//* Section D
+// ******************************************
+if (document.getElementById("section-d")) {
+  const categories = [
+    {
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/how-it-works/search.svg?w=48",
+      title: "Discover events and groups",
+      description: "See who's hosting local events for all the things you love",
+      action: "Search events and groups",
+      detailsUrl: "https://www.meetup.com/find/?location=eg--Cairo",
+    },
+    {
+      image:
+        "https://secure.meetupstatic.com/next/images/indexPage/how-it-works/plus.svg?w=48",
+      title: "Start a group to host events",
+      description:
+        "Create your own Meetup group, and draw from a community of millions",
+      action: "Start a group",
+      detailsUrl: "https://www.meetup.com/how-to-group-start/",
+    },
+  ];
+
+  // Function to map over the array and create HTML content
+  const container = document.getElementById("section-d");
+  // container.innerHTML = ""; // Clear existing content
+
+  categories.forEach((item, index) => {
+    const element = document.createElement("div");
+    element.addEventListener("click", () => {
+      window.location.href = item.detailsUrl;
+    });
+    element.classList.add("how-card");
+    element.innerHTML = `
+    <img src=${item.image}>
+    <div class="card-content">
+        <div class="card-title">${item.title}</div>
+        <div class="card-text">${item.description}</div>
+        <p class="card-link">${item.action}</p>
+    </div>
+`;
+
+    container.appendChild(element);
   });
 }

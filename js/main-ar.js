@@ -291,7 +291,7 @@ if (document.getElementById("section-a")) {
     fruitDiv.innerHTML = `
 <img src=${item.image}/>
 <h1>${item.title}</h1>
-<div>Hosted by: ${item.host}</div>
+<div>المضيف: ${item.host}</div>
 <div>
 <i class="fa-regular fa-calendar"></i>
 <span>${item.date}</span>
@@ -299,7 +299,7 @@ if (document.getElementById("section-a")) {
 <div class="card-row">
 <div>
 <i class="fa-regular fa-circle-check"></i>
-<span>${item.attendanceNum} going</span>
+<span>${item.attendanceNum} الحضور</span>
 </div>
 <div>
 <i class="fa-solid fa-ticket"></i>

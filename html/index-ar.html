@@ -8,69 +8,69 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <title>Responsive Navigation Bar</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../css/main-ar.css" />
   </head>
-  <body>
+  <body dir="rtl">
     <!-- navbar -->
     <div class="navbar">
-      <img class="logo" src="./assets/images/logo.png"></img>
+      <img class="logo" src="../assets/images/logo.png"></img>
       <div class="search-container">
         <div class="first-input">
           <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="search" placeholder="Search events" />
+          <input type="search" placeholder="بحث الفاعليات" />
         </div>
         <div class="second-input">
-          <input type="search" placeholder="Neighborhood, city or zip" />
+          <input type="search" placeholder="الحي أو المدينة أو الرمز البريدي" />
         </div>
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
-      <div class="language" onclick="englishToArabic()">
+      <div class="language" onclick="arabicToEnglish()">
         <i class="fa-solid fa-globe"></i>
-        <span  id="language">عربي</span>
+        <span  id="language">English</span>
       </div>
-      <button>Log in</button>
-      <button>Sign up</button>
+      <button>تسجيل الدخول</button>
+      <button>اشتراك</button>
     </div>
     <!-- banner -->
     <div class="banner container">
       <div class="content">
-        <h1>The people platform—Where interests become friendships</h1>
+        <h1>منصة الأشخاص - حيث تتحول المصالح إلى صداقات</h1>
         <p>
-          Whatever your interest, from hiking and reading to networking and
-          skill sharing, there are thousands of people who share it on Meetup.
-          Events are happening every day—sign up to join the fun.
+          مهما كانت اهتماماتك، من المشي لمسافات طويلة والقراءة إلى التواصل و
+          مشاركة المهارات، هناك الآلاف من الأشخاص الذين يشاركونها على Meetup.
+          الأحداث تحدث كل يوم - قم بالتسجيل للانضمام إلى المرح.
         </p>
-        <button>Join Meetup</button>
+        <button>انضم إلى ميتوب</button>
       </div>
       <div>
         <!-- The image will be displayed here -->
-        <img src="./assets/images/img1.png" class="banner-image" />
+        <img src="../assets/images/img1.png" class="banner-image" />
       </div>
     </div>
     <!-- section A -->
     <div class="container">
       <div class="section-title">
-        <h1>Events near</h1>
-        <button>Cairo, EG</button>
-        <a href="">See all events</a>
+        <h1>الأحداث قريبة</h1>
+        <button>القاهرة</button>
+        <a href="">رؤية جميع الأحداث</a>
       </div>
       <div id="section-a"></div>
     </div>
     <!-- section B -->
     <div class="container">
       <div class="section-title">
-        <h1 style="margin-bottom: 10px">Explore top categories</h1>
+        <h1 style="margin-bottom: 10px">اكتشف أهم الفئات</h1>
       </div>
       <div id="section-b"></div>
     </div>
     <!-- section C -->
     <div class="container">
       <div class="section-title">
-        <h1 style="margin-bottom: 10px">Friendships are made on Meetup</h1>
+        <h1 style="margin-bottom: 10px">يتم تكوين الصداقات على Meetup</h1>
         <p style="margin-bottom: 10px">
-          Since 2002, members have used Meetup to make new friends, meet
-          like-minded people, spend time on hobbies, and connect with locals
-          over shared interests. Learn how.
+          منذ عام 2002، استخدم الأعضاء Meetup لتكوين صداقات جديدة والالتقاء
+          الأشخاص ذوي التفكير المماثل، وقضاء بعض الوقت في ممارسة الهوايات، والتواصل مع السكان المحليين
+          على المصالح المشتركة. تعلم كيف.
         </p>
       </div>
       <div id="section-c"></div>
@@ -78,7 +78,7 @@
     <!-- section D -->
     <div class="container">
       <div class="section-title">
-        <h1>How Meetup works</h1>
+        <h1>كيف يعمل اللقاء</h1>
       </div>
       <div id="section-d"></div>
     </div>
@@ -88,42 +88,42 @@
       <!-- section 1 -->
       <div class="section1-container">
         <div class="section1-content">
-          <div>Create your own Meetup group.Get Started</div>
-          <button class="section1-button">Get Started</button>
+          <div>قم بإنشاء مجموعة Meetup الخاصة بك.ابدأ</div>
+          <button class="section1-button">البدء</button>
         </div>
         <hr class="section1-line" />
       </div>
       <div class="section2-container">
         <div class="section2-column">
-          <div>Your Account</div>
-          <a href="#">Sign up</a>
-          <a href="#">Login</a>
-          <a href="#">Help</a>
-          <a href="#">Become an Affiliate</a>
+          <div>الحساب الخاص بك</div>
+          <a href="#">اشتراك</a>
+          <a href="#">تسجيل الدخول</a>
+          <a href="#">المساعدة</a>
+          <a href="#">كن حليفا</a>
         </div>
         <div class="section2-column">
-          <div>Discover</div>
-          <a href="#">Groups</a>
-          <a href="#">Calendar</a>
-          <a href="#">Topics</a>
-          <a href="#">Cities</a>
-          <a href="#">Online Events</a>
-          <a href="#">Local Guides</a>
-          <a href="#">Make Friends</a>
+          <div>اكتشاف</div>
+          <a href="#">مجموعات</a>
+          <a href="#">تقويم</a>
+          <a href="#">المواضيع</a>
+          <a href="#">المدن</a>
+          <a href="#">الأحداث عبر الإنترنت</a>
+          <a href="#">المرشدين المحليين</a>
+          <a href="#">عمل صداقات</a>
         </div>
         <div class="section2-column">
-          <div>Meetup</div>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Meetup Pro</a>
-          <a href="#">Careers</a>
-          <a href="#">Apps</a>
-          <a href="#">Podcast</a>
+          <div>نلتقي</div>
+          <a href="#">عنا</a>
+          <a href="#">مدونة</a>
+          <a href="#">مدفوع</a>
+          <a href="#">وظائف</a>
+          <a href="#">تطبيقات</a>
+          <a href="#">تدوين صوتي</a>
         </div>
       </div>
       <div class="section3-container">
         <div>
-          <div style="padding-bottom: 10px">Follow us</div>
+          <div style="padding-bottom: 10px">تابعنا</div>
           <div class="social-icons">
             <!-- You will replace the "#" with the actual links -->
             <a href="#"><i class="fa-brands fa-facebook icon"></i></a>
@@ -149,12 +149,12 @@
       </div>
       <div class="section4-container">
         <div>© 2023 Meetup</div>
-        <a href="#">Terms of Service</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Cookie Policy</a>
-        <a href="#">Help</a>
+        <a href="#">شروط الخدمة</a>
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">سياسة ملفات الارتباط</a>
+        <a href="#">مساعدة</a>
       </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="../js/main-ar.js"></script>
   </body>
 </html>

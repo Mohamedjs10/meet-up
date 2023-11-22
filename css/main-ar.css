@@ -7,7 +7,7 @@
 * {
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: right;
   vertical-align: middle;
   font-size: 15px;
   /* border: 1px solid #0073e6; */
@@ -61,10 +61,10 @@ a:hover {
   background-color: #fff;
 }
 .search-container button {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   margin: 0;
-  padding-left: 8px;
+  padding-right: 8px;
   padding-right: 8px;
 
   background-color: #f65858;
@@ -73,7 +73,7 @@ a:hover {
   display: flex;
   align-items: center;
   border: 1px solid #ddd;
-  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   border-bottom-left-radius: 5px;
   max-width: 250px;
 }
@@ -129,9 +129,9 @@ button:hover {
   border-radius: 5px;
 }
 .language {
-  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 /* @media (max-width: 768px) {
   .navbar {
@@ -339,11 +339,9 @@ button:hover {
   width: 100%;
 }
 .card h1 {
-  text-align: left;
   color: #000;
 }
 .card div {
-  text-align: left;
 }
 .card-row {
   display: flex;

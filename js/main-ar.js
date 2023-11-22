@@ -235,44 +235,44 @@ if (document.getElementById("section-a")) {
       image:
         "https://secure-content.meetupstatic.com/images/classic-events/517169887/272x153.webp?w=384",
       title:
-        "Cairo Toastmasters Meeting - Develop your public speaking in Tagamo3!",
-      host: "Cairo Toastmasters - Improve your Public Speaking!",
-      date: "TUE, NOV 21 · 7:00 PM EET",
+        "اجتماع توستماسترز القاهرة - طور مهاراتك في التحدث أمام الجمهور في التجمع ٣!",
+      host: "توستماسترز القاهرة - طور مهاراتك في التحدث أمام الجمهور!",
+      date: "الثلاثاء، 21 نوفمبر · 7:00",
       attendanceNum: "30",
-      price: "free",
+      price: "مجاني",
       detailsUrl: "https://www.meetup.com/egypt-techies/events/297259050/",
     },
     {
       image:
         "https://secure-content.meetupstatic.com/images/classic-events/516791184/272x153.webp?w=384",
       title:
-        "Cairo Toastmasters Meeting - Develop your public speaking in Tagamo3!",
-      host: "Cairo Toastmasters - Improve your Public Speaking!",
-      date: "TUE, NOV 21 · 7:00 PM EET",
+        "اجتماع توستماسترز القاهرة - طور مهاراتك في التحدث أمام الجمهور في التجمع ٣!",
+      host: "توستماسترز القاهرة - طور مهاراتك في التحدث أمام الجمهور!",
+      date: "الثلاثاء، 21 نوفمبر · 7:00",
       attendanceNum: "30",
-      price: "free",
+      price: "مجاني",
       detailsUrl: "https://www.meetup.com/gdgcairo/events/295859151/",
     },
     {
       image:
         "https://secure-content.meetupstatic.com/images/classic-events/504922837/272x153.webp?w=384",
       title:
-        "Cairo Toastmasters Meeting - Develop your public speaking in Tagamo3!",
-      host: "Cairo Toastmasters - Improve your Public Speaking!",
-      date: "TUE, NOV 21 · 7:00 PM EET",
+        "اجتماع توستماسترز القاهرة - طور مهاراتك في التحدث أمام الجمهور في التجمع ٣!",
+      host: "توستماسترز القاهرة - طور مهاراتك في التحدث أمام الجمهور!",
+      date: "الثلاثاء، 21 نوفمبر · 7:00",
       attendanceNum: "30",
-      price: "free",
+      price: "مجاني",
       detailsUrl: "https://www.meetup.com/cairotmclub/events/297093037/",
     },
     {
       image:
         "https://secure-content.meetupstatic.com/images/classic-events/517361608/272x153.webp?w=384",
       title:
-        "Cairo Toastmasters Meeting - Develop your public speaking in Tagamo3!",
-      host: "Cairo Toastmasters - Improve your Public Speaking!",
-      date: "TUE, NOV 21 · 7:00 PM EET",
+        "اجتماع توستماسترز القاهرة - طور مهاراتك في التحدث أمام الجمهور في التجمع ٣!",
+      host: "توستماسترز القاهرة - طور مهاراتك في التحدث أمام الجمهور!",
+      date: "الثلاثاء، 21 نوفمبر · 7:00",
       attendanceNum: "30",
-      price: "free",
+      price: "مجاني",
       detailsUrl: "https://www.meetup.com/gdg-helwan/events/297446035/",
     },
   ];
@@ -349,56 +349,56 @@ if (document.getElementById("section-a")) {
   const categories = [
     {
       icon: "",
-      title: "Travel and Outdoor",
+      title: "السفر والخارج",
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/categories/travel_and_outdoor.svg?w=32 1x, https://secure.meetupstatic.com/next/images/indexPage/categories/travel_and_outdoor.svg?w=48",
       link: "https://www.meetup.com/lp/outdoors-and-travel/",
     },
     {
       icon: "",
-      title: "Social Activities",
+      title: "أنشطة اجتماعية",
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/categories/social_activities.svg?w=32",
       link: "https://www.meetup.com/lp/friendship-and-socializing/",
     },
     {
       icon: "",
-      title: "Hobbies and PAssions",
+      title: "الهوايات والعواطف",
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/categories/hobbies_and_passions.svg?w=32",
       link: "https://www.meetup.com/topics/hobbies-crafts/",
     },
     {
       icon: "",
-      title: "Sports and Fitness",
+      title: "الرياضة واللياقة البدنية",
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/categories/sports_and_fitness.svg?w=32",
       link: "https://www.meetup.com/topics/sports/",
     },
     {
       icon: "",
-      title: "Health and Wellbeing",
+      title: "الصحة والعافية",
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/categories/health_and_wellness.svg?w=32",
       link: "https://www.meetup.com/lp/health-and-wellness/",
     },
     {
       icon: "",
-      title: "Technology",
+      title: "تكنولوجيا",
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/categories/technology.svg?w=32",
       link: "https://www.meetup.com/lp/tech-activities-and-groups/",
     },
     {
       icon: "",
-      title: "Art and Culture",
+      title: "فن وثقافة",
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/categories/art_and_culture.svg?w=32",
       link: "https://www.meetup.com/topics/art-and-culture/",
     },
     {
       icon: "",
-      title: "Games",
+      title: "ألعاب",
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/categories/games.svg?w=32",
       link: "https://www.meetup.com/topics/games/",
@@ -431,23 +431,23 @@ if (document.getElementById("section-c")) {
     {
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/blog/first_article.webp?w=384",
-      title: "How to Turn Casual Connections into Close Friendships",
+      title: "كيفية تحويل الاتصالات غير الرسمية إلى صداقات وثيقة",
       description:
-        "It’s proven that close friendships are harder to make as an adult. But don’t sweat it: here’s what you can do to simplify the process.",
+        "لقد ثبت أن الصداقات الوثيقة يصعب تكوينها كشخص بالغ. لكن لا تقلق: إليك ما يمكنك فعله لتبسيط العملية.",
     },
     {
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/blog/second_article.webp?w=384",
-      title: "How to Turn Casual Connections into Close Friendships",
+      title: "كيفية تحويل الاتصالات غير الرسمية إلى صداقات وثيقة",
       description:
-        "It’s proven that close friendships are harder to make as an adult. But don’t sweat it: here’s what you can do to simplify the process.",
+        "لقد ثبت أن الصداقات الوثيقة يصعب تكوينها كشخص بالغ. لكن لا تقلق: إليك ما يمكنك فعله لتبسيط العملية.",
     },
     {
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/blog/third_article.webp?w=384",
-      title: "How to Turn Casual Connections into Close Friendships",
+      title: "كيفية تحويل الاتصالات غير الرسمية إلى صداقات وثيقة",
       description:
-        "It’s proven that close friendships are harder to make as an adult. But don’t sweat it: here’s what you can do to simplify the process.",
+        "لقد ثبت أن الصداقات الوثيقة يصعب تكوينها كشخص بالغ. لكن لا تقلق: إليك ما يمكنك فعله لتبسيط العملية.",
     },
   ];
 
@@ -466,7 +466,7 @@ if (document.getElementById("section-c")) {
     <div class="card-content">
         <div class="card-title">${item.title}</div>
         <div class="card-text">${item.description}</div>
-        <p class="card-link">Read more</p>
+        <p class="card-link">اقرأ المزيد</p>
     </div>
 `;
 
@@ -481,18 +481,18 @@ if (document.getElementById("section-d")) {
     {
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/how-it-works/search.svg?w=48",
-      title: "Discover events and groups",
-      description: "See who's hosting local events for all the things you love",
-      action: "Search events and groups",
+      title: "اكتشاف الأحداث والمجموعات",
+      description: "تعرف على من يستضيف الأحداث المحلية لكل الأشياء التي تحبها",
+      action: "البحث في الأحداث والمجموعات",
       detailsUrl: "https://www.meetup.com/find/?location=eg--Cairo",
     },
     {
       image:
         "https://secure.meetupstatic.com/next/images/indexPage/how-it-works/plus.svg?w=48",
-      title: "Start a group to host events",
+      title: "ابدأ مجموعة لاستضافة الأحداث",
       description:
-        "Create your own Meetup group, and draw from a community of millions",
-      action: "Start a group",
+        "قم بإنشاء مجموعة Meetup الخاصة بك، واستفد من مجتمع الملايين",
+      action: "ابدأ مجموعة",
       detailsUrl: "https://www.meetup.com/how-to-group-start/",
     },
   ];
